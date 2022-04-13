@@ -1,4 +1,4 @@
-version: "3.8"
+version: "3.4"
 
 services:
   oracle:
@@ -14,12 +14,8 @@ services:
       - 'dbdata:/opt/oracle/oradata'
     ports:
       - '1521:1521'
-      - '550:5500'
-    logging:
-      driver: "local"
-      options:
-        max-size: "100m"
-        max-file: "2"
+      
+    
 
 volumes:
   dbdata:
